@@ -1,9 +1,20 @@
+***************************************************************************
+                  MY USB EXTERNAL 1TB HARD DISK 
+                 MULTIBOOT LINUX AND UNIX PROJECT 
+                       BY MOHD FIROZ HANIF.
+**************************************************************************
+
 Please proceed with caution if ur trying to install or do this, if you cause
 a nuclear reaction i will not be held responsible for it!!
 
+THIS IS MY PROJECT OF WHICH TOOK ME AT LEAST 3-4days just to have all these installed
+and later on to config and to run each testing and it became my daily drivers!!!!
+Talk about VMS eh... haha
+
 This is my installation of 5 linux + 1 unix with an independant EFI and
-GRUB tree in to a single external HDD usb. Im extracting all these information 
-using My debian 12. its has been more then 6-7 months still smooth as silk.haha
+GRUB tree in to a single external HDD usb. MANUAL PARTITIONING!!!! 
+Im extracting all these information using My debian 12. 
+Its has been more then 6-7 months still smooth as silk.haha
 
 hansolo@wookie:~$ lsblk
 NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -47,9 +58,6 @@ Therefore 1TB USB externel HDD now running smoothly for
 5.Alpine
 6.freebsd 14
 
-and yes when you update the update will update its grubs, and insert itself in the NVRAM
-but still it is okay as  long as you have your grub scripts running.
-
 As you can check and see the grub pictures has been loaded also here is
 efibootmgr:
 
@@ -81,6 +89,7 @@ Boot0006* USB	BBS(HD,,0x0)..GO..NO........k.S.T.1.0.0.0.L.M. .0.1.5.7...........
 .A..MQ..L.W.D.E.6.D.X.7.6. . . . . . . . . . . . ........BO
 
 hansolo@wookie:~$ sudo efibootmgr
+
 BootCurrent: 0005
 Timeout: 5 seconds
 BootOrder: 0005,0001,0002,0000,0003,0004,0006
@@ -93,11 +102,14 @@ Boot0005* debian
 Boot0006* USB
 hansolo@wookie:~$ 
 
-The grub was independant as i unplugged the internal hdd (sda & sdb)
-sda-windows
-sdb-fedora 42 (grub)
+The GRUB installation was built completely independent by physically unplugging the internal drives 
+(sda and sdb where sda is Windows and sdb holds Fedora 42 grub) 
+before proceeding with the installation of each distro on the external drive.
 
-then proceed with the installation of each of the distros. 
+Note on Updates: When distros update, kernel updates will sometimes refresh their own grubs and
+insert entries into the motherboard NVRAM. It’s totally manageable as long as you keep your 
+custom grub scripts running and backed up, then proceed with the installation of each of the distros.
+The first Distro i installed was debian. 
 
 These are my Labs and my favorite of all time distro, Yet i am thinking of 
 installing REHL or ROCKY LINUX on this but that is for later. As you can see i have also installed
@@ -151,10 +163,12 @@ hansolo@wookie:~$ sudo blkid /dev/sdc11
 /dev/sdc11: LABEL="SHARED" UUID="582B-56EB" BLOCK_SIZE="512" 
 TYPE="exfat" PARTLABEL="SHARED_WORKSPACE" PARTUUID="95842f6f-1034-4921-b3a0-20defbfe7b9e"
 
-i really had alot fun yet alot of troubleshooting and especially scripting (grub) when doing this. 
-Please be careful when u try this type of installations as this may mess up your partitions 
-if you have no idea or any clue what your doing.!! I will also post my grub files and others as to share with 
-you guys later on....
+I really had alot fun yet alot of troubleshooting and especially scripting (grub) when doing this. 
+Please be careful when you try this type of installations as this may mess up your partitions 
+If you have no idea or any clue what your doing.!! (Do some research and ask the pros out there!!!)
+I will also post my grub files and others as to share with you guys later on....
+
+ps: got another 1tb External HDD USB... shall i do it for unix perhaps... haha later..
 
 Thank you.
 God Bless..
