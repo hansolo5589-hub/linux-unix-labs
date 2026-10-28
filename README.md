@@ -2,7 +2,8 @@ Please proceed with caution if ur trying to install or do this, if you cause
 a nuclear reaction i will not be held responsible for it!!
 
 This is my installation of 5 linux + 1 unix with an independant EFI and
-GRUB tree in to a single external HDD usb. 
+GRUB tree in to a single external HDD usb. Im extracting all these information 
+using My debian 12. its has been more then 6-7 months still smooth as silk.haha
 
 hansolo@wookie:~$ lsblk
 NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -46,27 +47,39 @@ Therefore 1TB USB externel HDD now running smoothly for
 5.Alpine
 6.freebsd 14
 
+and yes when you update the update will update its grubs, and insert itself in the NVRAM
+but still it is okay as  long as you have your grub scripts running.
+
 As you can check and see the grub pictures has been loaded also here is
 efibootmgr:
 
 hansolo@wookie:~$ sudo efibootmgr -v
+
 BootCurrent: 0005
 Timeout: 5 seconds
 BootOrder: 0005,0001,0002,0000,0003,0004,0006
 Boot0000* Windows Boot Manager	HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/File(\EFI\MICROSOFT\BOOT\BOOTMGFW.EFI)
 WINDOWS.........x...B.C.D.O.B.J.E.C.T.=.{.9.d.e.a.8.6.2.c.-.5.c.d.d.-.4.e.7.0.-.a.c.c.1.-.f.3.2.b.3.4.4.d.4.7.9.5.}....................
-Boot0001* kali	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/File(\EFI\KALI\GRUBX64.EFI)
+
+Boot0001* kali	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/
+File(\EFI\KALI\GRUBX64.EFI)
+
 Boot0002* Fedora	HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/File
 (\EFI\FEDORA\SHIM.EFI)..BO
+
 Boot0003* Hard Drive	BBS(HD,,0x0)..GO..NO........o.W.D.C. .W.D.1.0.E.Z.E.X.-.0.8.W.N.4.A.0....................A...........................>
 ..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.6.C.0.Y.K.C.D.5.8.F........BO..NO........o.W.D.C. .W.D.1.0.E.Z.R.X.-.0.0.L.4.H.B.0....................A...........................>
 ..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.4.C.3.J.0.4.7.5.5.6........BO
+
 Boot0004* Fedora	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/File
 (\EFI\FEDORA\SHIM.EFI)..BO
+
 Boot0005* debian	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/File
 (\EFI\DEBIAN\GRUBX64.EFI)..BO
+
 Boot0006* USB	BBS(HD,,0x0)..GO..NO........k.S.T.1.0.0.0.L.M. .0.1.5.7....................A.......................>..Gd-.;
 .A..MQ..L.W.D.E.6.D.X.7.6. . . . . . . . . . . . ........BO
+
 hansolo@wookie:~$ sudo efibootmgr
 BootCurrent: 0005
 Timeout: 5 seconds
@@ -140,7 +153,8 @@ TYPE="exfat" PARTLABEL="SHARED_WORKSPACE" PARTUUID="95842f6f-1034-4921-b3a0-20de
 
 i really had alot fun yet alot of troubleshooting and especially scripting (grub) when doing this. 
 Please be careful when u try this type of installations as this may mess up your partitions 
-if you have no idea or any clue what your doing.!! 
+if you have no idea or any clue what your doing.!! I will also post my grub files and others as to share with 
+you guys later on....
 
 Thank you.
 God Bless..
