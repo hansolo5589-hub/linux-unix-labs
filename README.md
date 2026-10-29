@@ -4,6 +4,8 @@
                        BY MOHD FIROZ HANIF.
 **************************************************************************
 
+More details on how to do it available on Multiboot-manual-installation.md
+
 Please proceed with caution if ur trying to install or do this, if you cause
 a nuclear reaction i will not be held responsible for it!!
 
