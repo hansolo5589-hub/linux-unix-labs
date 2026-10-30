@@ -73,7 +73,7 @@ You can use GPART,FDSIK, WINDOWS PARTITION MANAGERS, and everything else of whic
 
 Okay here we are as you already decided to proceed. Remember your call!!! 
 
-So what i did was.. i partition the HDD and label it so i could figure out where and what im doing..I was using fedora 42 when i did this. Also i had written down the partition names or sizes or any other information that i can get from the lsblk command.
+So what i did was.. I partition the HDD and label it so i could figure out where and what im doing.. I was using fedora 42 when I did this. Also I had written down the partition names or sizes or any other information that i can get from the lsblk command.
 
 
 hansolo@wookie:~$ lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT /dev/sdc
@@ -227,14 +227,14 @@ We use to setup linux not dual booting ..single booting!...then experimenting on
 I really do appreciate those guys out there since back in 1999s my first distro was REDHAT LINUX 5.2 and my first
 unix was FREEBSD 4.4 at that time. Single booting...then to dual booting.. here i learn manual partitioning and compiling kernels and it was a hell of a ride. Thanks to the Uber Pro LINUX/UNIX Gurus out there you guys are great always!!
 
-Here i always do this everytime i want to install linux or unix-- CHECK MEDIA INSTALLATION!! choose that..and let that run!!!Just to be on the safe side that your media is working fine and all the installation files are in perfect order!! Guys this was important to me as i have gone thru many hiccups ughhhh ....reduces error and human errors as you can narrow down your troubleshooting if anything were to go wrong -- not just by guessing!!!
+Here i always do this everytime i want to install linux or unix-- CHECK MEDIA INSTALLATION!! choose that..and let that run!!!Just to be on the safe side that your media is working fine and all the installation files are in perfect order!! Guys this was important to me as i have gone thru many hiccups ughhhh .... reduces error and human errors as you can narrow down your troubleshooting if anything were to go wrong -- not just by guessing!!!
 
 Now since everything has changed... i reckon you know by now how to install or setup linux single or dual rite. if you dont ! Gosh go read dude... DONT TELL ME ABOUT AI CRAP!! So Here we dont do auto partitioning... we do manual. 
 Choose the manual partitioning . UNDERSTAND HERE WHAT YOU DO AND WHAT YOU SEE at your screen.
 
-It will help on the other distro installation. THe first one should be easy peasy lemon squeeze for you because only single installation of the distro. Proceed to install to the desired partitions of your choice . Choose EXT4 format easy for other linux to discover or mount also easy on FreeBSD. Once the setup or installation completes...proceed to remove your thumbdrive and boot your bloddy linux distro!!! hahah ...if all is good and no errors on your side...then linux should be loading and you should see a log in page to enter your desktop. 
+It will help on the other distro installation. THe first one should be easy peasy lemon squeeze for you because only single installation of the distro. Proceed to install to the desired partitions of your choice . Choose EXT4 format easy for other linux to discover or mount also easy on FreeBSD. Once the setup or installation completes...proceed to remove your thumbdrive and boot your bloddy linux distro!!! hahah ... If all is good and no errors on your side... then linux should be loading and you should see a log in page to enter your desktop. 
 
-There...congrats setting up your linux. ---now i believe you already have installed linux and on your dekstop and have an internet connection active rite now. Go and install your browser of your choice or otherwise you can just download the BALENA ETCHER (BE) straight from you CLI and install it!! Fuckin dont ask me how!!! hahaha...come on man!! Get real!!!
+There...congrats setting up your linux. ---now i believe you already have installed linux and on your dekstop and have an internet connection active rite now. Go and install your browser of your choice or otherwise you can just download the BALENA ETCHER (BE) straight from you CLI and install it!! Fuckin dont ask me how!!! hahaha... come on man!! Get real!!!
 Once you got that installed fired it up and plug in back your thumb drive let it detect and read for you. I assume you already downloaded you 2nd distro-- of your choice--- use BE to write the thumbdrive for the 2nd distro of your choice. Once that is done -completed-- check and verify both downloaded file vs website vs thumb drive ....here comes Hell!!! hahahahahha...
 
                                     *********************************************
@@ -303,48 +303,26 @@ hansolo@wookie:~$
                                     *COMPLETE INSTALL 3RD ,4TH, 5TH LINUX DISTRO*
                                     *********************************************
 
-Now as for the subsequent setups 3rd 4th and the 5th installations are just similar with the 2nd setup but just remember dont format 
-those partitions. 
-
-HERE IN MY CASE : I PROCEEDED TO INSTALL -- ALPINE , KALI , FEDORA TO COMPLETE THE INSTALLATION/SETUP!! 
-
-REMEMBER ARCH IS MINIMAL LEAN-KISS CONCEPT( KEEP IT SIMPLE STUPID!) HAHA LOVE THAT... SO YOU MIGHT NOT SEE ALL THE LOADING LINUX PROCESS
-BUT YET IT WILL LOAD ...THATS KIND OF NICE AND BADASS ...HAHA I LIKE THAT...
+Now as for the subsequent setups 3rd 4th and the 5th installations are just similar with the 2nd setup but just remember dont format those partitions. HERE IN MY CASE : I PROCEEDED TO INSTALL -- ALPINE , KALI , FEDORA TO COMPLETE THE INSTALLATION/SETUP!! REMEMBER ARCH IS MINIMAL LEAN-KISS CONCEPT( KEEP IT SIMPLE STUPID!) HAHA LOVE THAT... SO YOU MIGHT NOT SEE ALL THE LOADING LINUX PROCESS BUT YET IT WILL LOAD ...THATS KIND OF NICE AND BADASS ...HAHA I LIKE THAT...
 
 AS FOR THE ALPINE- you will see linux loading screens.. the hardware check ups and process until load.
-
-ahh the great FEDORA-- YES HERE YOU WILL SEE AS USUAL. AND there is a reason why i put fedora last...as fedora will grab by defaul the
-grub and will detect automatically.FEDORA GRUB IS YOUR BACK UP PLAN IF ALL FAIL!! HAHAH DAMNN THAT IS SCARY EH !! DONT WORRY !!!
+Ahh the great FEDORA-- YES HERE YOU WILL SEE AS USUAL. AND there is a reason why i put fedora last...as fedora will grab by defaul the grub and will detect automatically.FEDORA GRUB IS YOUR BACK UP PLAN IF ALL FAIL!! HAHAH DAMNN THAT IS SCARY EH !! DONT WORRY !!!
 
 Set 
-BOOT PRIORTY - DEBIAN 1st option. (IN MY CASE ) i HAVE FEDORA 42 GRUB ALSO DETECTED ON BOOT AND ALSO KALI BOOT.
+BOOT PRIORTY - DEBIAN 1st option. (IN MY CASE )
+I HAVE FEDORA 42 GRUB ALSO DETECTED ON BOOT AND ALSO KALI BOOT.Load Debian---> once loaded--- run the os-prober command and let Debian detect all the Distro installed.What you should be able to see is fedora ,Debian, Alpine Arch Kali...on the grub menu. But here in my case.. i was only able to see fedora and debian and kali only. ARCH AND ALPINE was not visible on bios boot and was not visible on grub. So you should know how to extract that and point grub2 to the current folders. WE are talking about grub2 -->> point to /boot/efi/EFI vmlinuz to load it. 
 
-Load Debian---> once loaded--- run the os-prober command and let Debian detect all the Distro installed.
-
-What you should be able to see is fedora ,Debian, Alpine Arch Kali...on the grub menu. But here in my case.. i was only able
-to see fedora and debian and kali only. ARCH AND ALPINE was not visible on bios boot and was not visible on grub. So you should know
-how to extract that and point grub2 to the current folders. WE are talking about grub2 -->> point to /boot/efi/EFI vmlinuz to load it. 
-
-So GET USED TO wrestle and fighting with GRUB2--> 'e' command line interface etc....
-here you must remember the partitions that you create earlier to install each distro sdxN--- because in grub emergency command line
-you need to set root to point to the partitions of each linux. Just be prepared for that!!! The best possible way is, i have running
-debian and fedora to do it. So here i choose debian to handle my grub2.
+So GET USED TO wrestle and fighting with GRUB2--> 'e' command line interface etc.... Here you must remember the partitions that you create earlier to install each distro sdxN--- because in grub emergency command line you need to set root to point to the partitions of each linux. Just be prepared for that!!! The best possible way is, i have running debian and fedora to do it. So here i choose debian to handle my grub2.
 
 ******************
 *Debian ----Grub2*
 ******************
 
-What i did was, i let Os-Prober detect all my other distro in Debian and I create a custom GRUB to point to the rest remaining Distro. 
-That works out fine for me , i will post my grub2 conf files maybe would help you guys out. Later... hell... that was really hell
-fighting and wrestling with Grub-- Once you get that done... THAT IS SATISFYING!!! TRUST ME!! YOU WILL GET IT!!
+What i did was, i let Os-Prober detect all my other distro in Debian and I create a custom GRUB to point to the rest remaining Distro. That works out fine for me , i will post my grub2 conf files maybe would help you guys out. Later... hell... that was really hell fighting and wrestling with Grub-- Once you get that done... THAT IS SATISFYING!!! TRUST ME!! YOU WILL GET IT!!
 
 If all is good and went well with the GRUB2 configurations...
 
-You should be able to see All your linux detected by Grub....Congrats... you freakin fuckin made it ...thats what i thought hahaha...
-
-So..here we need to test it each distro if it loads...so mind you ... you will test you grub2 config custom files .
-
-If all is good ---> all linux will load nicely and as smooth as slik.
+You should be able to see All your linux detected by Grub....Congrats... you freakin fuckin made it ...thats what i thought hahaha... So..here we need to test it each distro if it loads...so mind you ... you will test you grub2 config custom files. If all is good ---> all linux will load nicely and as smooth as slik.
 
 Remember here you can choose which distro to act lead Grub on your boot bios, but here in my case i choose Debian which is far much better handling then fedora grub (no offence to you guys out there Fedora!! haha). 
 I managed to install everything then comes the hell ride of all times--FREEBSD INSTALLATION.
@@ -433,8 +411,10 @@ $menuentry_id_option 'gnulinux-6.1.0-47-amd64-advanced-ce45c2ea-041d-4949-b63a-2
 {menuentry "Kali Linux (Lab External)" 
 {menuentry "Fedora (Direct Boot)" --class fedora 
 {menuentry "FreeBSD (via EFI Loader)" --class freebsd 
-{
+}
 hansolo@wookie:~$
+
+***CHECK THE GRUB FILE I HAVE ATTACHED. AS WHEN DOING THIS MANUAL I MIGHT MISS OUT SOME WORDINGS OR CODINGS!!
 
 Heres my Boot Priorities:
 
