@@ -77,19 +77,32 @@ So what i did was.. I partition the HDD and label it so i could figure out where
 
 
 hansolo@wookie:~$ lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT /dev/sdc
+
 NAME      SIZE FSTYPE LABEL     MOUNTPOINT
-sdc     931.5G                  
+
+sdc     931.5G 
 ├─sdc1     16M 
+
 ├─sdc2    2.9G vfat EFIBOOTOS /boot/efi
+
 ├─sdc3   78.1G ext4 
+
 ├─sdc4   78.1G ext4 
+
 ├─sdc5   78.1G ext4 
+
 ├─sdc6   78.1G ext4               /
+
 ├─sdc7   78.1G ext4   KALI
+
 ├─sdc8     78G ufs    FBSD_LAB
-├─sdc9   29.3G swa              [SWAP]
+
+├─sdc9   29.3G swap              [SWAP]
+
 ├─sdc10  78.1G ext4   KERNELDEV 
-└─sdc11 352.4G exfat  SHARED    
+
+└─sdc11 352.4G exfat  SHARED
+
 hansolo@wookie:~$ 
 
 As you can see i have partition the tables for each distro handlings should be at about 80GB (plenty eh i guess).
@@ -141,9 +154,13 @@ That is an example for arch linux-- likewise the same for debian or other distro
 if your using linux, you can do it on the terminal itself.:
 
 hansolo@wookie:~$ mokutil --sb-state
+
 SecureBoot disabled
+
 hansolo@wookie:~$ sudo dmesg |grep -i secureboot
+
 [sudo] password for hansolo: 
+
 [    0.000000] secureboot: Secure boot disabled
 
 since your here check also for your tpm:
