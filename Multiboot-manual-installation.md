@@ -262,12 +262,12 @@ As you can see here once it is done correctly, you should have the following:
 hansolo@wookie:~$ sudo ls -ls /boot/efi
 [sudo] password for hansolo: 
 total 20
-4 drwx------  2 root root 4096 May 10 18:47 '$RECYCLE.BIN'
-4 drwx------ 11 root root 4096 May 13 18:14  EFI
-4 -rwx------  1 root root   34 May 13 09:02  mach_kernel
-0 -rwx------  1 root root    0 May 14 20:16  NvVars
-4 drwx------  3 root root 4096 May 13 09:02  System
-4 drwx------  2 root root 4096 May 10 17:11 'System Volume Information'
+4 drwx------2 root root 4096 May 10 18:47 '$RECYCLE.BIN'
+4 drwx------11 root root 4096 May 13 18:14  EFI
+4 -rwx------1 root root   34 May 13 09:02  mach_kernel
+0 -rwx------1 root root    0 May 14 20:16  NvVars
+4 drwx------3 root root 4096 May 13 09:02  System
+4 drwx------2 root root 4096 May 10 17:11 'System Volume Information'
 
 hansolo@wookie:~$ sudo ls -ls /boot/efi/EFI
 total 36
