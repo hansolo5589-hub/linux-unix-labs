@@ -425,30 +425,20 @@ Boot0005* debian
 Boot0006* USB
 
 hansolo@wookie:~$ sudo efibootmgr -v
-BootCurrent: 0005
-Timeout: 5 seconds
-BootOrder: 0005,0001,0002,0000,0003,0004,0006
-Boot0000* Windows Boot Manager	HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/
-File(\EFI\MICROSOFT\BOOT\BOOTMGFW.EFI)
-WINDOWS.........x...B.C.D.O.B.J.E.C.T.=
-.{.9.d.e.a.8.6.2.c.-.5.c.d.d.-.4.e.7.0.-.a.c.c.1.-.f.3.2.b.3.4.4.d.4.7.9.5.}....................
-Boot0001* kali	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/
-File(\EFI\KALI\GRUBX64.EFI)
-Boot0002* Fedora	HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/
-File(\EFI\FEDORA\SHIM.EFI)..BO
-Boot0003* Hard Drive	BBS(HD,,0x0)..GO..NO........o.W.D.C. 
-.W.D.1.0.E.Z.E.X.-.0.8.W.N.4.A.0....................A...........................>
-..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.6.C.0.Y.K.C.D.5.8.F........BO..NO........
-o.W.D.C. .W.D.1.0.E.Z.R.X.-.0.0.L.4.H.B.0....................A...........................>
-..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.4.C.3.J.0.4.7.5.5.6........BO
-Boot0004* Fedora	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/
-File(\EFI\FEDORA\SHIM.EFI)..BO
-Boot0005* debian	HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/
-File(\EFI\DEBIAN\GRUBX64.EFI)..BO
-Boot0006* USB	BBS(HD,,0x0)..GO..NO........
-k.S.T.1.0.0.0.L.M. .0.1.5.7....................A.......................>..Gd-.;.A..MQ..L.W.D.E.6.D.X.7.6. . . . . . . 
-. . . . ........BO
-hansolo@wookie:~$ 
+
+BootCurrent: 0005 Timeout: 5 seconds BootOrder: 0005,0001,0002,0000,0003,0004,0006 Boot0000* Windows Boot Manager HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/File(\EFI\MICROSOFT\BOOT\BOOTMGFW.EFI) WINDOWS.........x...B.C.D.O.B.J.E.C.T.=.{.9.d.e.a.8.6.2.c.-.5.c.d.d.-.4.e.7.0.-.a.c.c.1.-.f.3.2.b.3.4.4.d.4.7.9.5.}....................
+
+Boot0001* kali HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/ File(\EFI\KALI\GRUBX64.EFI)
+
+Boot0002* Fedora HD(2,GPT,d3c92b43-5d2a-41e3-a689-2053d7252430,0x4fc12800,0x12c000)/File (\EFI\FEDORA\SHIM.EFI)..BO
+
+Boot0003* Hard Drive BBS(HD,,0x0)..GO..NO........o.W.D.C. .W.D.1.0.E.Z.E.X.-.0.8.W.N.4.A.0....................A...........................> ..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.6.C.0.Y.K.C.D.5.8.F........BO..NO........o.W.D.C. .W.D.1.0.E.Z.R.X.-.0.0.L.4.H.B.0....................A...........................> ..Gd-.;.A..MQ..L. . . . .W. .-.D.C.W.4.C.3.J.0.4.7.5.5.6........BO
+
+Boot0004* Fedora HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/File (\EFI\FEDORA\SHIM.EFI)..BO
+
+Boot0005* debian HD(2,GPT,9a8f495d-2598-4e17-ae4b-446d4367f6ef,0x8000,0x5dc000)/File (\EFI\DEBIAN\GRUBX64.EFI)..BO
+
+Boot0006* USB BBS(HD,,0x0)..GO..NO........k.S.T.1.0.0.0.L.M. .0.1.5.7....................A.......................>..Gd-.; .A..MQ..L.W.D.E.6.D.X.7.6. . . . . . . . . . . . ........BO
 
 Heres more of my Blkd id:
 
