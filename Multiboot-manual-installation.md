@@ -164,22 +164,32 @@ hansolo@wookie:~$ sudo dmesg |grep -i secureboot
 [    0.000000] secureboot: Secure boot disabled
 
 since your here check also for your tpm:
+
 ls -l /dev/tpm*
 sudo dmesg | grep -i tpm
 
-• Enabled Output: You will see lines like tpm_tis ... TPM device found along with the version (e.g., TPM 2.0 device).
-• Disabled Output: The command will either return nothing or show a message indicating the device failed to initialize.
+• Enabled Output:You will see lines like tpm_tis ... TPM device found along with the version (e.g., TPM 2.0 device).
+• Disabled Output:The command will either return nothing or show a message indicating the device failed to Initialize.
 
 If it is disabled you will see something like this:
 hansolo@wookie:~$ sudo ls -l /dev/tpm*
+
 [sudo] password for hansolo:
+
 ls: cannot access '/dev/tpm*': No such file or directory
+
 hansolo@wookie:~$ sudo dmesg | grep -i tpm
+
 [    0.722511] ima: No TPM chip found, activating TPM-bypass!
+
 [    6.314574] systemd[1]: systemd 252.39-1~deb12u2 running in system mode
+
 (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL
+
 +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD
+
 +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT
+
 +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
 
 But for windows user: YUCKKKK!!!
