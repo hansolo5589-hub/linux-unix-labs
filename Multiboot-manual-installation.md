@@ -6,7 +6,7 @@
 ***************************************************
 
 It took me a while to do this manual technical installation after more than 6 months while looking thru my notes.
-Sorry guys. Preparing this tech manual (not much i guess) on DEBIAN 12 bookworm. I APPOLOGIZE UPFRONT FOR THE FORMATING AND THE SPACING, GOSH !! YOU GUYS ALWAYS BEEN SUPORTIVE AND GREAT!!!
+Sorry guys. Preparing this tech manual (not much i guess) on DEBIAN 12 bookworm. I APOLOGIZE UP FRONT FOR THE FORMATING AND THE SPACING OR ANY SPELLING ERRORS i made during this time. GOSH !! YOU GUYS ALWAYS BEEN SUPORTIVE AND GREAT!!!
 
 Please Know what your doing ... and those script kiddies-- GO READ OR DO SOME FUCKIN RESEARCH OR ASK THE UBER PRO
 LINUX/UNIX GUYS-- NEVER TAKE AI AS BIBLICAL INSTRUCTIONS!!! YOU MAY FUCK UP EVERYTHING AND BLOW UP EVERYTHING HAHAH!!!
