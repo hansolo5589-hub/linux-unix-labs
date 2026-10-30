@@ -9,12 +9,20 @@ More details on how to do it available on Multiboot-manual-installation.md
 Please proceed with caution if ur trying to install or do this, if you cause
 a nuclear reaction i will not be held responsible for it!!
 
-THIS IS MY PROJECT OF WHICH TOOK ME AT LEAST 3-4days just to have all these installed
+THIS IS MY PROJECT OF WHICH TOOK ME AT LEAST 5 days in total just to have all these installed
 and later on to config and to run each testing and it became my daily drivers!!!!
 Talk about VMS eh... haha
 
-This is my installation of 5 linux + 1 unix with an independant EFI and
-GRUB tree in to a single external HDD usb. MANUAL PARTITIONING!!!! 
+I do have other repo:
+Hardening suite
+Harware Audior -written on ASM + C + Perl
+Elite Proxy
+Local1-cyber range
+and this LINUX UNIX-LABS-
+
+  This is my installation of 5 linux + 1 unix with an independant EFI and
+  GRUB tree in to a single external HDD usb. 
+                  MANUAL PARTITIONING!!!! 
 Im extracting all these information using My debian 12. 
 Its has been more then 6-7 months still smooth as silk.haha
 
