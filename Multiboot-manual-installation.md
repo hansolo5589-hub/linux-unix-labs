@@ -399,38 +399,6 @@ Kali
 Fedora
 FreeBSD
 
-so here it is the menu entry of my GRUB:
-
-hansolo@wookie:~$ sudo grep -E "menuentry" /boot/efi/EFI/debian/grub.cfg
-
-if [ x"${feature_menuentry_id}" = xy ]; then
-
-menuentry_id_option="--id"
-
-menuentry_id_option=""
-
-export menuentry_id_option
-
-menuentry 'Debian GNU/Linux' --class debian --class gnu-linux --class gnu --class os $menuentry_id_option 
-'gnulinux-simple-ce45c2ea-041d-4949-b63a-29e5260749e5'
-
-{submenu 'Advanced options for Debian GNU/Linux' $menuentry_id_option 'gnulinux-advanced-ce45c2ea-041d-4949-b63a-29e5260749e5'
-{
-menuentry 'Debian GNU/Linux, with Linux 6.1.0-51-amd64' --class debian --class gnu-linux --class gnu --class os
-menuentry_id_option 'gnulinux-6.1.0-51-amd64-advanced-ce45c2ea-041d-4949-b63a-29e5260749e5'
-
-{menuentry 'Debian GNU/Linux, with Linux 6.1.0-47-amd64' --class debian --class gnu-linux --class gnu --class os
-$menuentry_id_option 'gnulinux-6.1.0-47-amd64-advanced-ce45c2ea-041d-4949-b63a-29e5260749e5'
-
-{menuentry 'UEFI Firmware Settings' $menuentry_id_option 'uefi-firmware'
-{menuentry "Arch Linux (Lab External)"
-{menuentry "Alpine Linux (Lab External)"
-{menuentry "Kali Linux (Lab External)" 
-{menuentry "Fedora (Direct Boot)" --class fedora 
-{menuentry "FreeBSD (via EFI Loader)" --class freebsd 
-}
-hansolo@wookie:~$
-
 ***CHECK THE GRUB FILE I HAVE ATTACHED. AS WHEN DOING THIS MANUAL I MIGHT MISS OUT SOME WORDINGS OR CODINGS!!
 
 Heres my Boot Priorities:
